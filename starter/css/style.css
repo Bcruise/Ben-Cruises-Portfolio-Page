@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  display: grid;
+  grid-template-areas: "header"
+    "subtitle"
+    "about-me"
+    "work"
+    "contact-me";
+  grid-template-rows: 100px 200px 200px 700px 200px;
+  background-color: #dce1e3;
+}
+
+/* use grid and CSS variable */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  color: #591c0b;
+  padding-left: 30px;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  grid-area: subtitle;
+  background-image: url(/starter/images/GettyImages-1224500457-e1643727629417.jpg);
+  background-size: 100%;
+  color: white;
+}
+
+.subtitle-span {
+  color: #dce1e3;
+  font-size: 50px;
+  margin-right: 25px;
+}
+
+.about-me {
+  grid-area: about-me;
+  display: flex;
+  flex-direction: row;
+  margin: 25px 0px;
+  color: #5c5f58;
+}
+
+.work {
+  grid-area: work;
+  display: flex;
+  flex-direction: row;
+  margin: 25px 0px;
+  color: #5c5f58;
+}
+
+.contact-me {
+  grid-area: contact-me;
+  display: flex;
+  flex-direction: row;
+  margin: 25px 0px;
+  color: #5c5f58;
+}
+
+.about-me-title, .work-title, .contact-me-title {
+  display: flex;
+  justify-content: flex-end;
+  width: 25%;
+  border-right: 2px solid #591c0b;
+  padding-right: 20px;
+  font-size: 50px;
+}
+
+.about-me-text, .work-div, .contact-me-div {
+  width: 75%;
+  padding-left: 25px;
+  padding-right: 50px;
+}
+
+.work-div {
+  display: grid;
+  grid-template-areas: "work-div-type-one work-div-type-one"
+  "work-div-type-two work-div-type-three"
+  "work-div-type-four work-div-type-five";
+  grid-template-rows: 50% 25% 25%;
+  grid-template-columns: 50% 50%;
+}
+
+.work-div-type-one {
+  grid-area: work-div-type-one;
+  border: 5px solid #5c5f58;
+  margin-bottom: 10px;
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(/starter/images/02-portfolio-3.jpg);
+  background-size: 80%;
+  cursor: pointer;
+}
+
+.work-div-type-two {
+  grid-area: work-div-type-two;
+  border: 5px solid #5c5f58;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(/starter/images/02-portfolio-1.jpg);
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.work-div-type-three {
+  grid-area: work-div-type-three;
+  border: 5px solid #5c5f58;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(/starter/images/02-portfolio-2.jpg);
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.work-div-type-four {
+  grid-area: work-div-type-four;
+  border: 5px solid #5c5f58;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(/starter/images/02-portfolio-4.jpg);
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.work-div-type-five {
+  grid-area: work-div-type-five;
+  border: 5px solid #5c5f58;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(/starter/images/02-run-buddy.jpg);
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.work-div-type-one:hover {
+  background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(/starter/images/02-portfolio-3.jpg);
+  background-size: 80%;
+}
+
+.work-div-type-two:hover {
+  background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(/starter/images/02-portfolio-1.jpg);
+  background-size: 100%;
+}
+
+.work-div-type-three:hover {
+  background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(/starter/images/02-portfolio-2.jpg);
+  background-size: 100%;
+}
+
+.work-div-type-four:hover {
+  background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(/starter/images/02-portfolio-4.jpg);
+  background-size: 100%;
+}
+
+.work-div-type-five:hover {
+  background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(/starter/images/02-run-buddy.jpg);
+  background-size: 100%;
+}
+
+.work-div-box-one, .work-div-box-two {
+  border: 5px solid #5c5f58;
+  width: 150px;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: -5px;
+}
+
+.work-div-box-one {
+  background-color: #5c5f58;
+  margin-top: 210px;
+}
+
+.work-div-box-two {
+  background-color: #5c5f58;
+  margin-top: 50px;
+}
+
+.work-div-span-one {
+  font-size: 18px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  color: #dce1e3;
+}
+
+.work-div-span-two {
+  font-size: 12px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  color: #dce1e3;
+}
+
+.about-me-text {
+  display: grid;
+  grid-template-areas: "about-me-span"
+    "about-me-p";
+  grid-template-rows: 75% 25%;
+}
+
+.about-me-span {
+  grid-area: about-me-span;
+  width: 130px;
+  text-align: end;
+}
+
+.about-me-p {
+  grid-area: about-me-p;
+  padding-bottom: 15px;
+}
+
+.contact-me-span {
+  width: 200px;
+  text-align: end;
+}
+
+.contact-me-div {
+  align-self: center;
+}
+
+.contact-me-div div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+header {
+  background-color: #dce1e3;
+  display: flex;
+  padding: 20px;
+  grid-area: header;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;  
+  justify-content: flex-end;
+  padding-right: 30px;
+  width: 50%;
+}
+
+li {
+  padding: 0px 15px;  
+  list-style-type: none;
+}
+
+a, a:link, a:active {
+  color: #591c0b;
+}
+
