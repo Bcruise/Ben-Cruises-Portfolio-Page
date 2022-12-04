@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --dark-red: #591c0b;
+  --almost-white: #dce1e3;
+  --grey: #5c5f58;
+
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -14,10 +21,8 @@ body {
     "work"
     "contact-me";
   grid-template-rows: 100px 200px 200px 700px 200px;
-  background-color: #dce1e3;
+  background-color: var(--almost-white);
 }
-
-/* use grid and CSS variable */
 
 h1,
 h2,
@@ -37,7 +42,7 @@ p {
   justify-content: flex-start;
   align-items: center;
   width: 50%;
-  color: #591c0b;
+  color: var(--dark-red);
   padding-left: 30px;
 }
 
@@ -52,7 +57,7 @@ p {
 }
 
 .subtitle-span {
-  color: #dce1e3;
+  color: var(--almost-white);
   font-size: 50px;
   margin-right: 25px;
 }
@@ -62,7 +67,7 @@ p {
   display: flex;
   flex-direction: row;
   margin: 25px 0px;
-  color: #5c5f58;
+  color: var(--grey);
 }
 
 .work {
@@ -70,7 +75,7 @@ p {
   display: flex;
   flex-direction: row;
   margin: 25px 0px;
-  color: #5c5f58;
+  color: var(--grey);
 }
 
 .contact-me {
@@ -78,14 +83,14 @@ p {
   display: flex;
   flex-direction: row;
   margin: 25px 0px;
-  color: #5c5f58;
+  color: var(--grey);
 }
 
 .about-me-title, .work-title, .contact-me-title {
   display: flex;
   justify-content: flex-end;
   width: 25%;
-  border-right: 2px solid #591c0b;
+  border-right: 2px solid var(--dark-red);
   padding-right: 20px;
   font-size: 50px;
 }
@@ -108,7 +113,7 @@ p {
 .work-div-type-one {
   grid-area: work-div-type-one;
   text-decoration: none;
-  border: 5px solid #5c5f58;
+  border: 5px solid var(--grey);
   margin-bottom: 10px;
   background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(/Ben-Cruises-Portfolio-Page/images/02-portfolio-3.jpg);
   background-size: 80%;
@@ -118,7 +123,7 @@ p {
 .work-div-type-two {
   grid-area: work-div-type-two;
   text-decoration: none;
-  border: 5px solid #5c5f58;
+  border: 5px solid var(--grey);
   margin-bottom: 10px;
   margin-right: 5px;
   background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(/Ben-Cruises-Portfolio-Page/images/02-portfolio-1.jpg);
@@ -129,7 +134,7 @@ p {
 .work-div-type-three {
   grid-area: work-div-type-three;
   text-decoration: none;
-  border: 5px solid #5c5f58;
+  border: 5px solid var(--grey);
   margin-bottom: 10px;
   margin-left: 5px;
   background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(/Ben-Cruises-Portfolio-Page/images/02-portfolio-2.jpg);
@@ -140,7 +145,7 @@ p {
 .work-div-type-four {
   grid-area: work-div-type-four;
   text-decoration: none;
-  border: 5px solid #5c5f58;
+  border: 5px solid var(--grey);
   margin-bottom: 10px;
   margin-right: 5px;
   background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(/Ben-Cruises-Portfolio-Page/images/02-portfolio-4.jpg);
@@ -151,7 +156,7 @@ p {
 .work-div-type-five {
   grid-area: work-div-type-five;
   text-decoration: none;
-  border: 5px solid #5c5f58;
+  border: 5px solid var(--grey);
   margin-bottom: 10px;
   margin-left: 5px;
   background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(/Ben-Cruises-Portfolio-Page/images/02-run-buddy.jpg);
@@ -185,7 +190,7 @@ p {
 }
 
 .work-div-box-one, .work-div-box-two {
-  border: 5px solid #5c5f58;
+  border: 5px solid var(--grey);
   width: 150px;
   height: 75px;
   display: flex;
@@ -195,12 +200,12 @@ p {
 }
 
 .work-div-box-one {
-  background-color: #5c5f58;
+  background-color: var(--grey);
   margin-top: 210px;
 }
 
 .work-div-box-two {
-  background-color: #5c5f58;
+  background-color: var(--grey);
   margin-top: 50px;
 }
 
@@ -208,14 +213,14 @@ p {
   font-size: 18px;
   padding-bottom: 5px;
   padding-left: 5px;
-  color: #dce1e3;
+  color: var(--almost-white);
 }
 
 .work-div-span-two {
   font-size: 12px;
   padding-left: 5px;
   padding-bottom: 5px;
-  color: #dce1e3;
+  color: var(--almost-white);
 }
 
 .about-me-text {
@@ -251,7 +256,7 @@ p {
 }
 
 header {
-  background-color: #dce1e3;
+  background-color: var(--almost-white);
   display: flex;
   padding: 20px;
   grid-area: header;
@@ -277,12 +282,14 @@ li {
 }
 
 a, a:link, a:active {
-  color: #591c0b;
+  color: var(--dark-red);
 }
 
 .contact-me-links {
-  color: #5c5f58;  
+  color: var(--grey);
 }
+
+/* changes for tablet devices */
 
 @media (max-width: 768px) {
   a {
@@ -310,7 +317,7 @@ a, a:link, a:active {
 
   .about-me-title, .work-title, .contact-me-title {
     width: 100px;
-    border-right: 2px solid #591c0b;
+    border-right: 2px solid var(--dark-red);
     padding-right: 20px;
     font-size: 15px;
     padding-left: 10px;
@@ -348,7 +355,9 @@ a, a:link, a:active {
   }
 }
 
-@media (max-width: 480px) {
+/* changes for mobile devices */
+
+@media (max-width: 390px) {
   a {
     display: none;
   }
@@ -374,7 +383,7 @@ a, a:link, a:active {
 
   .about-me-title, .work-title, .contact-me-title {
     width: 100px;
-    border-right: 2px solid #591c0b;
+    border-right: 2px solid var(--dark-red);
     padding-right: 20px;
     font-size: 15px;
   }
