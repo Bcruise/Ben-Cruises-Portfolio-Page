@@ -107,6 +107,7 @@ p {
 
 .work-div-type-one {
   grid-area: work-div-type-one;
+  text-decoration: none;
   border: 5px solid #5c5f58;
   margin-bottom: 10px;
   background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(/Ben-Cruises-Portfolio-Page/images/02-portfolio-3.jpg);
