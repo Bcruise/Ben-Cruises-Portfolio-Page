@@ -117,6 +117,7 @@ p {
 
 .work-div-type-two {
   grid-area: work-div-type-two;
+  text-decoration: none;
   border: 5px solid #5c5f58;
   margin-bottom: 10px;
   margin-right: 5px;
@@ -127,6 +128,7 @@ p {
 
 .work-div-type-three {
   grid-area: work-div-type-three;
+  text-decoration: none;
   border: 5px solid #5c5f58;
   margin-bottom: 10px;
   margin-left: 5px;
@@ -137,6 +139,7 @@ p {
 
 .work-div-type-four {
   grid-area: work-div-type-four;
+  text-decoration: none;
   border: 5px solid #5c5f58;
   margin-bottom: 10px;
   margin-right: 5px;
@@ -147,6 +150,7 @@ p {
 
 .work-div-type-five {
   grid-area: work-div-type-five;
+  text-decoration: none;
   border: 5px solid #5c5f58;
   margin-bottom: 10px;
   margin-left: 5px;
@@ -280,3 +284,105 @@ a, a:link, a:active {
   color: #5c5f58;  
 }
 
+@media (max-width: 768px) {
+  a {
+    display: none;
+  }
+
+  .name {
+    width: 400px;
+    font-size: 17px;
+  }
+
+  .subtitle {
+    width: 768px;
+  }
+
+  body {
+    display: grid;
+    grid-template-areas: "header"
+      "subtitle"
+      "about-me"
+      "work"
+      "contact-me";
+    grid-template-rows: 100px 150px 400px 1000px 200px;
+  }
+
+  .about-me-title, .work-title, .contact-me-title {
+    width: 100px;
+    border-right: 2px solid #591c0b;
+    padding-right: 20px;
+    font-size: 15px;
+    padding-left: 10px;
+  }
+  
+  .about-me-text, .work-div, .contact-me-div {
+    width: 400px;
+    padding-left: 25px;
+    padding-right: 150px;
+    font-size: 15px;
+  }
+
+  .work-div {
+    display: grid;
+    grid-template-areas: "work-div-type-one"
+    "work-div-type-two" 
+    "work-div-type-three"
+    "work-div-type-four" 
+    "work-div-type-five";
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-columns: 100%;
+  }
+
+  .work-div-type-one, .work-div-type-two, .work-div-type-three, .work-div-type-four, .work-div-type-five {
+    margin-bottom: 25px;
+    display:initial;
+  }
+
+  .work-div-box-one {
+    margin-top: 50px;
+  }
+
+  .work-div-type-three, .work-div-type-five {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  a {
+    display: none;
+  }
+
+  .name {
+    width: 400px;
+    font-size: 17px;
+  }
+
+  .subtitle {
+    width: 768px;
+  }
+
+  body {
+    display: grid;
+    grid-template-areas: "header"
+      "subtitle"
+      "about-me"
+      "work"
+      "contact-me";
+    grid-template-rows: 100px 150px 400px 1000px 200px;
+  }
+
+  .about-me-title, .work-title, .contact-me-title {
+    width: 100px;
+    border-right: 2px solid #591c0b;
+    padding-right: 20px;
+    font-size: 15px;
+  }
+  
+  .about-me-text, .work-div, .contact-me-div {
+    width: 400px;
+    padding-left: 25px;
+    padding-right: 150px;
+    font-size: 15px;
+  }
+}
