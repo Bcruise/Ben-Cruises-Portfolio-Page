@@ -46,7 +46,7 @@ p {
   justify-content: flex-end;
   align-items: flex-end;
   grid-area: subtitle;
-  background-image: url(/starter/images/GettyImages-1224500457-e1643727629417.jpg);
+  background-image: url(/Ben-Cruises-Portfolio-Page/images/GettyImages-1224500457-e1643727629417.jpg);
   background-size: 100%;
   color: white;
 }
@@ -109,7 +109,7 @@ p {
   grid-area: work-div-type-one;
   border: 5px solid #5c5f58;
   margin-bottom: 10px;
-  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(/starter/images/02-portfolio-3.jpg);
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(/Ben-Cruises-Portfolio-Page/images/02-portfolio-3.jpg);
   background-size: 80%;
   cursor: pointer;
 }
@@ -119,7 +119,7 @@ p {
   border: 5px solid #5c5f58;
   margin-bottom: 10px;
   margin-right: 5px;
-  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(/starter/images/02-portfolio-1.jpg);
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(/Ben-Cruises-Portfolio-Page/images/02-portfolio-1.jpg);
   background-size: 100%;
   cursor: pointer;
 }
@@ -129,7 +129,7 @@ p {
   border: 5px solid #5c5f58;
   margin-bottom: 10px;
   margin-left: 5px;
-  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(/starter/images/02-portfolio-2.jpg);
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(/Ben-Cruises-Portfolio-Page/images/02-portfolio-2.jpg);
   background-size: 100%;
   cursor: pointer;
 }
@@ -139,7 +139,7 @@ p {
   border: 5px solid #5c5f58;
   margin-bottom: 10px;
   margin-right: 5px;
-  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(/starter/images/02-portfolio-4.jpg);
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(/Ben-Cruises-Portfolio-Page/images/02-portfolio-4.jpg);
   background-size: 100%;
   cursor: pointer;
 }
@@ -149,33 +149,33 @@ p {
   border: 5px solid #5c5f58;
   margin-bottom: 10px;
   margin-left: 5px;
-  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(/starter/images/02-run-buddy.jpg);
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(/Ben-Cruises-Portfolio-Page/images/02-run-buddy.jpg);
   background-size: 100%;
   cursor: pointer;
 }
 
 .work-div-type-one:hover {
-  background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(/starter/images/02-portfolio-3.jpg);
+  background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(/Ben-Cruises-Portfolio-Page/images/02-portfolio-3.jpg);
   background-size: 80%;
 }
 
 .work-div-type-two:hover {
-  background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(/starter/images/02-portfolio-1.jpg);
+  background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(/Ben-Cruises-Portfolio-Page/images/02-portfolio-1.jpg);
   background-size: 100%;
 }
 
 .work-div-type-three:hover {
-  background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(/starter/images/02-portfolio-2.jpg);
+  background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(/Ben-Cruises-Portfolio-Page/images/02-portfolio-2.jpg);
   background-size: 100%;
 }
 
 .work-div-type-four:hover {
-  background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(/starter/images/02-portfolio-4.jpg);
+  background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(/Ben-Cruises-Portfolio-Page/images/02-portfolio-4.jpg);
   background-size: 100%;
 }
 
 .work-div-type-five:hover {
-  background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(/starter/images/02-run-buddy.jpg);
+  background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(/Ben-Cruises-Portfolio-Page/images/02-run-buddy.jpg);
   background-size: 100%;
 }
 
@@ -273,5 +273,9 @@ li {
 
 a, a:link, a:active {
   color: #591c0b;
+}
+
+.contact-me-links {
+  color: #5c5f58;  
 }
 
