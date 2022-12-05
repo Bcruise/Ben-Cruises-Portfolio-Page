@@ -10,7 +10,7 @@
 }
 
 body {
-  margin: 0;
+  margin: auto;
   padding: 0;
   font-family: 'Roboto', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
@@ -296,6 +296,7 @@ a, a:link, a:active {
   nav {
     display: flex;
     flex-direction: column;
+    padding-left: 50px;
   }
 
   .name {
@@ -314,7 +315,7 @@ a, a:link, a:active {
       "about-me"
       "work"
       "contact-me";
-    grid-template-rows: 100px 150px 400px 1000px 200px;
+    grid-template-rows: 100px 150px 300px 1000px 200px;
   }
 
   .about-me-title, .work-title, .contact-me-title {
@@ -326,7 +327,7 @@ a, a:link, a:active {
   }
   
   .about-me-text, .work-div, .contact-me-div {
-    width: 400px;
+    width: 500px;
     padding-left: 25px;
     padding-right: 150px;
     font-size: 15px;
@@ -365,6 +366,11 @@ a, a:link, a:active {
   .name {
     width: 400px;
     font-size: 17px;
+    margin-left: -50px;
+  }
+
+  ul {
+    margin-left: -50px;
   }
 
   .subtitle {
@@ -392,11 +398,15 @@ a, a:link, a:active {
     padding-right: 20px;
     font-size: 15px;
   }
-  
+
   .about-me-text, .work-div, .contact-me-div {
     width: 400px;
     padding-left: 25px;
     padding-right: 150px;
     font-size: 15px;
+  }
+
+  ul {
+    padding-left: 280px;
   }
 }
