@@ -395,7 +395,7 @@ a, a:link, a:active {
       "about-me"
       "work"
       "contact-me";
-    grid-template-rows: 100px 150px 250px 1000px 200px;
+    grid-template-rows: 100px 150px 400px 1000px 200px;
   }
 
   .about-me-title, .work-title, .contact-me-title {
@@ -413,6 +413,6 @@ a, a:link, a:active {
   }
 
   ul {
-    padding-left: 280px;
+    padding-right: 200px;
   }
 }
