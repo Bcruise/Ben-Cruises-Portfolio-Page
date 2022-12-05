@@ -292,8 +292,10 @@ a, a:link, a:active {
 /* changes for tablet devices */
 
 @media (max-width: 768px) {
-  a {
-    display: none;
+
+  nav {
+    display: flex;
+    flex-direction: column;
   }
 
   .name {
@@ -358,9 +360,7 @@ a, a:link, a:active {
 /* changes for mobile devices */
 
 @media (max-width: 390px) {
-  a {
-    display: none;
-  }
+
 
   .name {
     width: 400px;
@@ -369,6 +369,11 @@ a, a:link, a:active {
 
   .subtitle {
     width: 768px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
   }
 
   body {
