@@ -356,6 +356,11 @@ a, a:link, a:active {
   .work-div-type-three, .work-div-type-five {
     margin-left: 0px;
   }
+
+  ul {
+    width: 500px;
+    margin-left: -160px;
+  }
 }
 
 /* changes for mobile devices */
